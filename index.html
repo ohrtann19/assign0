@@ -1,9 +1,261 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Assignment 0</title>
-	</head>
-	<body>
-		Hello, world!
-	</body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>SleepCoacher - Brown University HCI Group</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">SleepCoacher</a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="#articles">Articles</a></li>
+				<li class="nav-item"><a class="nav-link" href="#install">Install</a></li>
+				<li class="nav-item"><a class="nav-link" href="#code">Code</a></li>
+				<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="d-flex flex-column justify-content-center align-items-center top-pane">
+	<img alt="SleepCoacher" src="images/sleepcoacher.png" style="width: 10rem; height: 10rem;">
+	<h1 class="text-light display-2">SleepCoacher</h1>
+	<h2 class="text-light text-center h6">Your Personal Sleep Coach: A 10-Year Brown University Research Study on Sleep</h2>
+	<a href="#install" class="btn text-light btn-lg">Download App</a>
+</div>
+
+<div id="about" class="container-fluid">
+	<div class="row align-items-center py-3 py-sm-5 px-3 px-sm-5 mx-xl-5 text-light">
+		<div class="col-sm-12 col-md-6 col-lg-5 px-3 px-sm-5 ml-md-auto pb-3 pb-sm-5 order-md-4">
+			<h3>Can you optimize your sleep?</h3>
+			<p class="lead">SleepCoacher is an automated system to help you achieve that by monitoring your sleep behaviors, guiding you towards better sleep quality through self-experiments that happen while you sleep. It's based on <a class="link-warning" href="https://jeffhuang.com/papers/SleepBandits_CHI20.pdf">research conducted by Brown University</a>.</p>
+		</div>
+		<div class="text-center col-sm-3 col-md-1 col-lg-2 pb-3 pb-sm-5">
+			<img class="border border-white" src="./images/home.png" alt="sleepcoacher homescreen" style="height: 22rem;">
+		</div>
+		<div class="text-center col-sm-3 col-md-1 col-lg-2 pb-3 pb-sm-5">
+			<img class="border border-white" src="./images/results.png" alt="sleepcoacher results screen" style="height: 22rem;">
+		</div>
+		<div class="text-center col-sm-3 col-md-1 col-lg-2 pb-3 pb-sm-5">
+			<img class="border border-white" src="./images/daily_updates.png" alt="sleepcoacher daily updates screen" style="height: 22rem;">
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid dream">
+	<div class="row px-md-3 px-lg-5 pt-3 pt-md-5 justify-content-center">
+		<div class="col-md-6 col-xl-5 col-xxl-4 mb-4">
+			<div class="card">
+				<div class="card-header">
+					<h3>How SleepCoacher Works</h3>
+				</div>
+				<div class="card-body lead">
+					<p class="card-text">Some people need more sleep than others, some are night owls while others are early birds,
+						and some are more sensitive to noise. To know how to sleep better, you need to know more about yourself.</p>
+					<p class="card-text">SleepCoacher was designed to be your own personal sleep coach: it shows you a list of sleep
+						expert-approved suggestions that you can incorporate into your life and see if they help you sleep better.</p>
+					<p class="card-text">When you put your phone on the bed, the app monitors movement and noise while you sleep.
+						When you wake up, it sends your sleep data to a system that reviews your sleep history, and learns how your behavior and sleep
+						quality are related.</p>
+					<p class="card-text"> Since everyone responds to changes differently, SleepCoacher observes the outcomes of
+						behavioral changes, and tells you what works best for you specifically. After a few nights of tracking your sleep and following the
+						instructions of what to do, SleepCoacher lets you know which condition is more likely to help you sleep
+						better (e.g. there is an 83% likelihood that wearing roomier PJs is helping you fall asleep faster).</p>
+					<p class="card-text">The results are updated continuously so the more you sleep, the more confident SleepCoacher can be.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-xl-5 col-xxl-4 mb-4">
+			<div class="card h-100">
+				<div class="card-header">
+					<h3>The 10-Year Study on Sleep</h3>
+				</div>
+				<div class="card-body lead">
+					<p class="card-text">To learn what behaviors affect your sleep quality, a week is not enough. Even a month can only tell you one or two things about your habits.</p>
+					<p class="card-text">SleepCoacher will run for 10 years, so you as a user can optimize your sleep behaviors over a long series of mini-experiments. Start and stop each self-experiment whenever you please.</p>
+					<div class="text-center">
+						<img src="./images/cycle.png" alt="SleepCoacher cycle" style="max-width: 28rem; width: 100%;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="articles" class="container-fluid bg-white">
+	<div class="container">
+		<h4>Articles and Videos</h4>
+		<div class="d-flex lead article-entry">
+			<a class="d-none d-md-inline mr-4" href="https://jeffhuang.com/covid_sleep/"><img width="74" src="./images/covid-thumbnail.png" alt="pdf icon"></a>
+			<p>
+				<a class="paper-link" href="https://jeffhuang.com/covid_sleep/">The Coronavirus Pandemic has Changed Our Sleep: Analysis of sleep records from 100,000 people</a><br>
+				Jeff Huang, Liyaan Maskati, Nediyana Daskalova. 2020.
+			</p>
+		</div>
+		<div class="d-flex lead article-entry">
+			<a class="d-none d-md-inline mr-4" href="https://jeffhuang.com/papers/SleepBandits_CHI20.pdf"><img src="./images/pdf.png" alt="pdf icon"></a>
+			<p>
+				<a class="paper-link" href="https://jeffhuang.com/papers/SleepBandits_CHI20.pdf">SleepBandits: Guided Flexible Self-Experiments for Sleep</a><br>
+				Nediyana Daskalova, Jina Yoon, Yibing Wang, Cintia Araujo, Guillermo Beltran, Nicole Nugent, John McGeary, Joseph Jay Williams, Jeff Huang. SleepBandits: Guided Flexible Self-Experiments for Sleep. CHI 2020.
+			</p>
+		</div>
+		<p>Video below summarizes our paper and its findings, but the paper contains more details.</p>
+		<video style="width: 100%; height: auto; max-width: 25rem;" controls>
+			<source src="./videos/sleepbandits.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<div class="d-flex lead article-entry">
+			<a class="d-none d-md-inline mr-4" href="https://sleepcoacher.cs.brown.edu/videos/heypillow.mp4"><img width="74" src="./images/pillow_icon.png" alt="pdf icon"></a>
+			<p>
+				<a class="paper-link" href="https://sleepcoacher.cs.brown.edu/videos/heypillow.mp4">HeyPillow: Computationally Guided Sleep Behavior Study through Sensing (Video)</a><br>
+				Nediyana Daskalova, Jiaju Ma, Tiffany Chen, Valerie Nguon, Jing Qian, Chonghui Chen, Jeff Huang. WISH@CHI Poster 2019.
+			</p>
+		</div>
+		<div class="d-flex lead article-entry">
+			<a class="d-none d-md-inline mr-4" href="https://medium.com/@brown.university.hci/sleepcoacher-how-to-complete-your-2019-resolution-to-sleep-better-one-self-experiment-at-a-time-a6237ce2ec3c"><img width="74" src="./images/medium_icon.png" alt="pdf icon"></a>
+			<p>
+				<a class="paper-link" href="https://medium.com/@brown.university.hci/sleepcoacher-how-to-complete-your-2019-resolution-to-sleep-better-one-self-experiment-at-a-time-a6237ce2ec3c">SleepCoacher: how to complete your 2019 resolution to sleep better, one self-experiment at a time</a><br>
+				Brown HCI Group. 2019.
+			</p>
+		</div>
+		<div class="d-flex lead article-entry">
+			<a class="d-none d-md-inline mr-4" href="https://www.browndailyherald.com/2018/09/12/smart-pillow-talks-users-improves-sleep/"><img width="74" src="./images/pillow_icon.png" alt="pdf icon"></a>
+			<p>
+				<a class="paper-link" href="https://www.browndailyherald.com/2018/09/12/smart-pillow-talks-users-improves-sleep/">Smart Pillow Talks to Users, Improves Sleep</a><br>
+				Cate Ryan, Brown Daily Herald. 2018.
+			</p>
+		</div>
+		<div class="d-flex lead article-entry">
+			<a class="d-none d-md-inline mr-4" href="https://sleepcoacher.cs.brown.edu/comparison/"><img width="74" src="./images/icons.png" alt="pdf icon"></a>
+			<p>
+				<a class="paper-link" href="https://sleepcoacher.cs.brown.edu/comparison/">Comparing 10 Sleep Trackers. How well do they track your sleep? A 9-day minute-by-minute comparison</a><br>
+				Jina Yoon. 2017.
+			</p>
+		</div>
+		<div class="d-flex lead article-entry">
+			<a class="d-none d-md-inline mr-4" href="https://jeffhuang.com/papers/SleepCoacher_UIST16.pdf"><img src="./images/pdf.png" alt="pdf icon"></a>
+			<p>
+				<a class="paper-link" href="https://jeffhuang.com/papers/SleepCoacher_UIST16.pdf">SleepCoacher: A Personalized Automated Self-Experimentation System for Sleep Recommendations</a><br>
+				Nediyana Daskalova, Dana&euml; Metaxa-Kakavouli, Adrienne Tran, Nicole Nugent, Julie Boergers, John McGeary, Jeff Huang. UIST 2016.
+			</p>
+		</div>
+		<p>Video below summarizes our paper and its findings, but the paper contains more details.</p>
+		<video style="width: 100%; height: auto; max-width: 25rem;" controls>
+			<source src="./videos/sleepcoacher2016.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+</div>
+
+<div id="install" class="container-fluid">
+	<div class="container text-light text-center">
+		<h4>Get SleepCoacher Now</h4>
+		<hr>
+		<img class="pt-4" src="images/phones.png" alt="Android and iPhone with SleepCoacher app" style="width: 25%; height: 25%">
+
+		<div class="row text-center mb-5">
+			<div class="col-sm-6 col-xs-8 pt-5">
+				<h5><a class="app-link" href="https://play.google.com/store/apps/details?id=edu.brown.sleepcoacher&hl=en">SleepCoacher for Android</a></h5>
+				<a href="https://play.google.com/store/apps/details?id=edu.brown.sleepcoacher&hl=en">
+					<img class="btn" alt="Google Play badge" src="images/google-play-badge.png" style="max-width: 12rem;">
+				</a>
+			</div>
+			<div class="col-sm-6 col-xs-8 pt-5">
+				<h5><a class="app-link" href="https://apps.apple.com/us/app/sleepcoacher/id1446980859">SleepCoacher for iOS</a></h5>
+				<a href="https://apps.apple.com/us/app/sleepcoacher/id1446980859">
+					<img class="btn" alt="iOS App Store badge" src="images/app-store-badge.png" style="max-width: 12rem;">
+				</a>
+			</div>
+		</div>
+		<div class="row pt-4 text-center">
+			<div class="col-sm-12">
+				<h4>Want to be notified about app and research updates?</h4>
+				<a class="btn btn-outline-light btn-lg mb-5" href="https://docs.google.com/forms/d/e/1FAIpQLSeTCgnwF1gjrc1O8mfJ_5TmT_TLowFQ2DUhsollmqPG84pAFQ/viewform?usp=pp_url&entry.1299571007=SleepCoacher:+mobile+peer+advisor+(including+our+sleep+research+results)&entry.1760653896=sleepcoacher+website" role="button">Subscribe</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="code" class="container-fluid bg-white text-center">
+	<div class="container">
+		<h4 class="pb-4">Source Code and Documentation</h4>
+		
+		<p class="lead">The source code for the system from the SleepCoacher 2016 UIST paper is available, along with documentation about how to set it up. The software for the smartphone app and new statistical engine will be released soon on this page.</p>
+
+		<p><a href="https://github.com/brownhci/SleepCoacher" class="btn text-light btn-lg">Source Code on Github</a></p>
+
+		<img src="./images/sleeper.png" alt="example SleepCoacher data" style="width: 100%; max-width: 50rem">
+	</div>
+</div>
+
+<div id="team" class="text-light">
+	<h4 class="text-center">Development Team</h4>
+	<div class="container">
+		<hr class="mb-5">
+		<div class="row text-center justify-content-center">
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot" src="images/cintia.jpg">
+				<h5>Cintia Araujo</h5>
+			</div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot"  src="images/memo.jpg">
+				<h5>Guillermo Beltran</h5>
+			</div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot"  src="images/nediyana.jpg">
+				<h5>Nediyana Daskalova</h5>
+			</div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot" src="images/jeff.jpg">
+				<h5><a href="https://jeffhuang.com">Jeff Huang</a></h5>
+			</div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot"  src="images/sleepcoacher.png">
+				<h5>Niharika Jhingan</h5>
+			</div>
+			<div class="d-none d-lg-block"></div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot" src="images/yusuf.png">
+				<h5><a href="https://yusufkarim.com/">Yusuf Karim</a></h5>
+			</div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot" src="images/danae.jpg">
+				<h5><a href="https://dmetaxak.github.io/">Dana&euml; Metaxa-Kakavouli</a></h5>
+			</div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot" src="images/adrienne.jpg">
+				<h5><a href="http://adriennetran.com/">Adrienne Tran</a></h5>
+			</div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot" src="images/lisa.jpg">
+				<h5>Lisa Wang</h5>
+			</div>
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img class="headshot" src="images/jina.jpg">
+				<h5>Jina Yoon</h5>
+			</div>
+		</div>
+	</div>
+	<p class="text-center mb-5">
+		<br>
+		This research is in collaboration with clinicians and researchers at Rhode Island Hospital and the Providence VA Medical Center<br>
+		Funded by the Brown University Seed Award, National Science Foundation IIS-1656763, the Brown University Data Science Institute, and NIH R01 MH124832-01
+	</p>
+</div>
+
+<footer class="bg-white py-3">
+	<div class="container text-right">
+		<p class="mb-0"><a class="paper-link" href="https://hci.brown.edu/">Brown HCI Group</a><br>
+			Made with <font color="#FF1493">&#9829;</font> in Providence</p>
+	</div>
+</footer>
+
+</body>
 </html>
